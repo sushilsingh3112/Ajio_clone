@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Online Shopping For Women,Men,Kids-Clothing,Footwear|Ajio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <script>
+      function check() {
+        var re = /^[0-9]+$/;
+        const ph = document.getElementById("number").value;
+    
+        if (!ph.match(re) || ph.length !== 10) {
+          alert("Entered phone number is not correct");
+        }
+        else{
+          alert("phone no. is correct you can proceed to our home page")
+          window.location.href="index.html";
+
+        }
+      }
+    </script>
+       
+  </head>
+  <body>
+<script>
+      
+</script>
+
+       <nav class="nav-container ">
+              <div id="logo-container-div" class="nav-contner-div">
+                     <img alt="logo"
+                     src="https://assets.ajio.com/static/img/Ajio-Logo.svg"
+                     id="ajio-nav-logo">
+                     
+                     
+       </div>
+
+              <div class="nav-contner-div" id="nav-catagories-container">
+                
+               <div> <a class="nav" href="men.html">Men</a></div>
+               <div> <a class="nav" href="#">Women</a></div>
+               <div> <a class="nav" href="#">Kids</a></div>
+               <div> <a class="nav" href="#">Indie</a></div>
+               <div> <a class="nav" href="#">Home and Kitchen</a></div>
+            
+            
+       </div>
+             
+              <div class="nav-contner-div" id="nav-utilities-container" >
+                <div class="container">
+                  <div class="Sign-in">
+                    <p  class="new" onclick="showBox()">Sign-In/Join AJIO</p>
+                    </div>
+                    <p class="new">Customer Care</p>
+                    <div class="image2">
+                    <div class="new1" >
+                      <a href="index.html">Visit AJIOLUXE</a>
+                    </div>
+                    
+                  </div>
+                  </div>
+              <input type="text" placeholder="Search AJIO" id="nav-search-div"/>
+              
+        </div>
+
+        <div class="nav-icon-box">
+          <a href="cart.html">
+              <img style="height: 35px; width: 40px; margin-top: 50px; " src="image/shopping-bag.svg" alt="">
+
+          </a>
+      </div>
+       </nav>
+       <div class="sign-in-container">
+        <div class="sign-in-box">
+        
+            <div onclick="hideBox()" class="close" >X</div>
+    
+    
+            <h2 class="box-heading top">Welcome to AJIO</h2>
+            <h3 class="box-heading join">Join/Sign In using</h3>
+            <div class="link-box">
+                <div class="fb"><img src="image/facebook.png" alt=""> Facebook</div>
+                <div class="google"><img src="image/g-search.png" alt=""> Google</div>
+            </div>
+            <div class="or">Or</div>
+            <div class="line left"></div>
+            <div class="line right"></div>
+            <h3 class="box-heading small" id="inputHeading">Enter Mobile Number/Email*</h3>
+            
+            <p id="warning"></p>
+            <input type="text" id="number" onchange="check()"><br>
+            <div class="hide input-container" id="inputCont" >
+                
+            </div>
+            <button onclick="check()" class="continue" id="continueBtn">CONTINUE</button><br>
+            <h3 class="box-heading lite">By Signing in, I agree to <span class="blue-span">Term and Conditions.</span></h3>
+        </div>
+        </div>
+       
+<hr>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajio Clone - My Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            margin-left: 400px;
+            align-self: center;
+            padding: 20px;
+            background-color: white;
+            align-items: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);     
+                   width: 50%;
+
+
+        }
+
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+        }
+
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            align-items: center;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Cart</h1>
+    </header>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Cart Items -->
+                <tr>
+                    <td>Product 1</td>
+                    <td>₹2000.00</td>
+                    <td>2</td>
+                    <td>₹4000.00</td>
+                </tr>
+                <tr>
+                    <td>Product 2</td>
+                    <td>₹750.00</td>
+                    <td>1</td>
+                    <td>₹750.00</td>
+                </tr>
+                <tr > <td colspan="4" style="text-align: right;"> Total : ₹4750.00</td></tr>
+            </tbody>
+        </table>
+<br>
+        <button>Checkout</button>
+    </section>
+
+</body>
+</html>
+
+<hr class="hr">
+
+
+<div class="bottom_icons">
+    <div class="exchange_icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOSleffsgSsashwROvgH26qoTpSqlQBMe0Shd5emGuHC7qRZTl" alt=""><br><br>
+        <div>EASY EXCHANGE</div>
+    </div>
+
+    <div class="exchange_icons">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStPsdLlQq9T_-o_ndL1lc66uwb0rnsXF7tdft3ExBdkJik6LAa" alt=""><br><br>
+        <div>100% HANDPICKED</div>
+    </div>
+
+    <div class="exchange_icons">
+        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcScEyVI4gDhOVv62XgCYGYnZImfcezYA1huL35dY6yZARjpV6-2" alt=""><br><br>
+        <div>ASSURED QUALITY</div>
+    </div>
+
+</div>
+<hr>
+
+
+
+ <!-- FOOTER CONTENT -->
+ <footer class="footer">
+    <div class="row">
+        <div class="footer-col">
+            <h4>Ajio</h4>
+            <ul>
+                <li><a href="#">Who We Are</a></li>
+                <li><a href="#">Join Our Team</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+                <li><a href="#">We Respect Your Privacy</a></li>
+                <li><a href="#">Fees & Payments</a></li>
+                <li><a href="#">Returns & Refunds Policy</a></li>
+                <li><a href="#">Promotions Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>HELP</h4>
+            <ul>
+                <li><a href="#">Track Your Order</a></li>
+                <li><a href="#">Frequently Asked Questions</a></li>
+                <li><a href="#">Returns</a></li>
+                <li><a href="#">Cancellations</a></li>
+                <li><a href="#">Payments</a></li>
+                <li><a href="#">Customer Care</a></li>
+                <li><a href="#">How Do I Redeem My Coupon</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Shop by</h4>
+            <ul>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Indie</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brand Directory</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Collections</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Follow us</h4>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram=AJIOlife</a></li>
+                <li><a href="#">Instagram=AJIO LUXE</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Pinterest</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+<!-- <hr /> -->
+
+<div id="bottom-footer">
+
+    <div id="main">
+        <div>
+            <p>Payment Methods</p>
+        </div>
+        <div id="btm-left">
+            <p>Net Banking</p>
+            <p>Verified By Visa</p>
+            <p>Naster Card</p>
+            <p>CASH ON DELIVERY</p>
+            <p>Jio Money</p>
+        </div>
+    </div>
+    <div id="btm-right">
+        <p>Secure systems</p>
+        <p>256 BIT</p>
+    </div>
+
+    <div id="f-btns">
+        <button id="foot-btn">></button>
+        <button id="foot-btn1">...</button>
+        
+    </div>
+
+</body>
+</html>
